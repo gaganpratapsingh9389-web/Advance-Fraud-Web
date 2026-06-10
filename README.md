@@ -18,7 +18,8 @@ A simple and efficient URL Shortener that converts long URLs into short, shareab
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+<img width="1898" height="1070" alt="image" src="https://github.com/user-attachments/assets/79867733-91c5-44d6-9045-f85195007dc7" />
+
 
 ## 🔧 Installation
 
