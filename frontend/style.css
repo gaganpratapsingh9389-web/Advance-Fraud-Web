@@ -1,0 +1,247 @@
+/* 🔥 Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #c984c8, #7c490b, #c765ca);
+    color: white;
+    text-align: left;
+}
+
+/* 🔹 Header & Footer */
+header {
+    background: whitesmoke (136, 125, 152, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+footer {
+    background: whitesmoke (136, 125, 152, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+/* 🔹 Main Containers */
+.main-box, .result-box {
+    margin: 80px auto;
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.main-box:hover, .result-box:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔹 Input Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* 🔹 Button */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+/* 🔐 Safe Search Button (NEW PREMIUM) */
+.safe-search-btn {
+    margin-top: 12px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00ffcc, #0066ff);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+.safe-search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+}
+
+.safe-search-btn:active {
+    transform: scale(0.98);
+}
+
+/* 🔄 Flip Animation */
+.flip {
+    animation: flipAnim 0.6s ease-in-out;
+}
+
+@keyframes flipAnim {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(180deg); }
+}
+
+/* 🔹 Loader */
+.loader {
+    margin: 20px auto;
+    border: 4px solid #ffffff20;
+    border-top: 4px solid #00c6ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* 🔹 Error */
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+/* 🔹 Status */
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Trust Meter */
+.trust-meter .bar {
+    width: 100%;
+    height: 18px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#trustFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00ff88, #00c6ff);
+    transition: width 0.5s ease-in-out;
+}
+
+#trustValue {
+    font-weight: bold;
+}
+
+/* 🔹 Boxes */
+.review-box, .recommend-box, .ai-box, .safe-sites {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* 🔹 Safe Links */
+.safe-sites ul {
+    padding-left: 20px;
+}
+
+.safe-sites a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+.safe-sites a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 500px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+#theme-toggle{
+    position:absolute;
+    top:25px;
+    right:30px;
+    padding:10px 18px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    background:#ffffff;
+    color:#333;
+    transition:0.3s;
+}
+
+#theme-toggle:hover{
+    transform:scale(1.05);
+}
+.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+.workflow{
+    text-align: left;
+    padding:50px 20px;
+}
+
+.step{
+    display:inline-block;
+    width:220px;
+    margin:20px;
+}
+
+.step img{
+    width:800px;
+    height:400px;
+    margin-bottom:10px;
+}

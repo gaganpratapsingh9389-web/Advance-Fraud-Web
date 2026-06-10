@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result | WebGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🔍 Website Analysis Report</h1>
+    <p>AI-Based Security Insights</p>
+</header>
+
+<main class="result-box">
+
+    <!-- 🔥 Status -->
+    <h2 id="statusText" class="status"></h2>
+
+    <!-- 📊 Trust Score -->
+    <div class="trust-meter">
+        <p>Trust Score</p>
+        <div class="bar">
+            <div id="trustFill"></div>
+        </div>
+        <span id="trustValue"></span>
+    </div>
+
+    <!-- 🤖 AI Explanation -->
+    <div class="ai-box">
+        <h3>🤖 AI Explanation</h3>
+        <p id="aiText">Analyzing...</p>
+    </div>
+
+    <!-- 💬 Review Analysis -->
+    <div class="review-box">
+        <h3>💬 User Review Analysis</h3>
+        <p id="reviewText"></p>
+    </div>
+
+    <!-- ✅ Recommendation -->
+    <div class="recommend-box">
+        <h3>✅ Recommendation</h3>
+        <p id="recommendText"></p>
+    </div>
+
+    <!-- 🔗 Suggested Safe Sites -->
+    <div class="safe-sites">
+        <h3>🔗 Safe Alternatives</h3>
+        <ul id="safeList"></ul>
+    </div>
+
+    <!-- 🔐 Safe Search Button (NEW) -->
+    <button class="safe-search-btn" onclick="openGoogleSearch()">🔐 Verify on Google</button>
+
+    <!-- 🔁 Back Button -->
+    <a href="index.html" class="back-btn">← Analyze Another Website</a>
+
+</main>
+
+<footer>
+    <p>© 2026 WebGuard AI | Cyber Security Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

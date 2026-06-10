@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔹 Header -->
+<header class="header">
+    <h1>🛡 WebGuard AI</h1> <button id="theme-toggle">🌙 Dark Mode</button>
+    
+    <p>AI-Powered Fraud Detection & Safe Website Recommendation</p>
+</header>
+
+<!-- 🔹 Main Input Box -->
+<main class="main-box">
+    <h2>🔍 Analyze Website Security</h2>
+
+    <div class="input-group">
+        <input type="text" id="urlInput" placeholder="Enter URL (https://example.com)">
+        <button onclick="analyzeWebsite()">Analyze</button>
+    </div>
+
+    <!-- 🔐 Safe Search Button (NEW) -->
+    <button class="safe-search-btn" onclick="openGoogleSearch()">🔐 Safe Search</button>
+
+    <!-- Loader -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Error Message -->
+    <p id="errorMsg" class="error"></p>
+</main>
+
+<!-- 🔹 Result Preview (future use) -->
+<section id="resultSection" class="result hidden">
+    <h2>🔎 Analysis Result</h2>
+    <div id="resultBox"></div>
+</section>
+
+<!-- 🔹 About Section -->
+ <section class="workflow">
+    <h2>⚙️ How It Works</h2>
+
+    <div class="step">
+        <h3>Step 1</h3>
+        <p>Enter Website URL</p>
+        <img src="images/website.png.bmp">
+        
+    </div><br>
+
+    <div class="step">
+        <h3>Step 2</h3>
+        <p>Feature Extraction & Analysis</p>
+        <img src="images/analysis.png.bmp">
+        
+    </div><br>
+
+    <div class="step">
+        <h3>Step 3</h3>
+        <p>Verify on safe search</p>
+        <img src="images/result.png.bmp" alt="Result">
+        
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<section class="about">
+    <h2>About WebGuard AI</h2>
+    <p>
+        WebGuard AI is an intelligent web security system designed to detect fraudulent 
+        and malicious websites and recommend genuine and trusted alternatives.
+    </p>
+
+    <p>
+        It uses Machine Learning, LLMs, and sentiment analysis to classify websites 
+        as <b>Genuine</b>, <b>Fraudulent</b>, or <b>Suspicious</b>.
+    </p>
+
+    <p>
+        The goal is to protect users from phishing attacks, scams, and fake websites 
+        by providing real-time AI-based insights.
+    </p>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<!-- 🔹 Footer -->
+<footer>
+    <p>🛡️ WebGuard AI | AI-Powered Fraud Detection & Safe Website Recommendation</p>
+    
+    <p>
+        Developed By:
+        Gagan Pratap Singh |
+        Ajad Baghel |
+        Nikhil Pratap Singh
+    </p>
+
+    <p>© 2026 WebGuard AI | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
