@@ -6,3 +6,4 @@ joblib
 tldextract
 python-whois
 requests
+flask-cors
