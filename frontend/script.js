@@ -17,7 +17,7 @@ function analyzeWebsite() {
     // Show loader
     if (loader) loader.classList.remove("hidden");
 
-    fetch("http://127.0.0.1:5000/analyze", {
+    fetch("https://advance-fraud-web.onrender.com/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: url })
