@@ -239,9 +239,9 @@ button:hover {
     width:220px;
     margin:20px;
 }
-
-.step img{
-    width:800px;
-    height:400px;
-    margin-bottom:10px;
+.step img {
+    width: 800px;
+    height: 450px;
+    border-radius: 20px;
+    object-fit: cover;
 }
